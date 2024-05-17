@@ -1,17 +1,5 @@
 @charset "UTF-8";
-/*!
-=========================================================
-* LeadMark Landing page
-=========================================================
 
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 :root {
   --blue: #007bff;
@@ -4467,10 +4455,13 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  color: #000; /* Warna teks awal */
+  transition: color 0.3s; /* Transisi halus */
 }
 
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
+  color: #007bff; /* Warna teks biru saat di-hover */
 }
 
 .nav-link.disabled {
@@ -4485,6 +4476,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-item {
   margin-bottom: -1px;
+  
 }
 
 .nav-tabs .nav-link {
@@ -4495,6 +4487,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
+  
 }
 
 .nav-tabs .nav-link.disabled {
@@ -11154,16 +11147,35 @@ textarea.form-control {
 
 .mouse-icon {
   border: 2px solid #fff;
-  border-radius: 16px;
-  height: 40px;
-  width: 24px;
-  display: block;
+  border-radius: 20px;
+  height: 48px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 10;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 100px;
   margin: auto;
+  background-color: transparent; /* Pastikan latar belakang awal transparan */
+  transition: background-color 0.3s, color 0.3s; /* Tambahkan transisi untuk efek halus */
+}
+
+.mouse-icon .nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  transition: color 0.3s; /* Tambahkan transisi untuk efek halus */
+}
+
+.mouse-icon:hover {
+  background-color: #fff; /* Latar belakang berubah menjadi putih saat hover */
+}
+
+.mouse-icon:hover .nav-link {
+  color: #000; /* Teks berubah menjadi hitam saat hover */
 }
 
 .mouse-icon .wheel {
@@ -11544,6 +11556,7 @@ textarea.form-control {
 
 .section {
   padding: 80px 0;
+  text-align: justify;
 }
 
 .section:nth-child(even) {
