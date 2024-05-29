@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <title>AQUADATING</title>
+    <!-- Icon -->
+    <link rel="shortcut icon" href={{ url_for('static', filename='favicon.ico') }}>
+    
+    <!-- font icons -->
+    <link rel="stylesheet" href={{ url_for('static', filename='vendors/themify-icons/css/themify-icons.css') }}>
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href={{ url_for('static', filename='css/leadmark.css') }}>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href={{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href={{ url_for('static', filename='css/leadmark.css') }} type="text/css">
+	
+	<!-- JavaScript -->
+	<script src={{ url_for('static', filename='js/leadmark.js') }} ></script>
+<style>
+    #video-container {
+        width: 100%;
+        margin: auto;
+    }
+
+    #live-video {
+        width: 100%;
+        height: auto;
+        display: none;
+        /* Initially hide the live video */
+    }
+</style>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src={{ url_for('static', filename='imgs/logo.svg') }} alt="">
+            </a>
+            <a class="nav-item" href="#home">&#160; AQUADATING</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">        
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>           
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Our Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aplikasi">Aplikasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                  
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
+
+    <!-- Page Header -->
+    <header class="header" id="Home">
+        <div class="overlay">
+            <h1 class="subtitle">AQUADATING</h1>
+            <h1 class="title">Apple Quality Detection with Automatic Counting</h1>  
+        </div>  
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>  
+        
+        <div class="mouse-icon">
+        <a class="nav-link" href="#explanation">Read More</a>
+        
+        </div></div>
+       
+    </header>
+    <!-- End Of Page Header -->
+
+   
+
+    <!-- About Section -->
+    <section class="section" id="explanation" >
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <h6 class="section-title mb-0">AQUADATING</h6>
+                    <h6 class="section-subtitle mb-4">Apple Quality Detection with Automatic Counting                    </h6>
+                    <p>Web kami merupakan solusi inovatif berbasis machine learning yang dirancang untuk otomatisasi penghitungan dan inspeksi kualitas buah apel.Website kami bertujuan untuk mengatasi masalah yang dihadapi oleh industri apel di Indonesia, terkait dengan penghitungan manual dan kontrol kualitas yang sering kali tidak akurat dan tidak konsisten.</p>
+                    <img src={{ url_for('static', filename='imgs/about.jpg') }} alt="" class="w-100 mt-3 shadow-sm">
+                    
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src={{ url_for('static', filename='imgs/apple_fresh.jpg') }} alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-6">
+                            <img src={{ url_for('static', filename='imgs/apple_stale.jpg') }} alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-12 mt-4">
+                            <p>Indonesia, dengan iklim tropis dan tanah yang subur, adalah lokasi yang sempurna untuk pertanian, termasuk penanaman apel yang umumnya memerlukan iklim sejuk. Daerah seperti Malang, Pasuruan, Magetan, dan Batu menjadi pusat produksi, dengan hasil panen yang berlimpah digunakan untuk berbagai produk olahan apel.</p>
+                            </p>
+                            <p>Dalam industri apel, terdapat tantangan dalam penghitungan dan pengendalian kualitas buah. Pencatatan manual seringkali tidak akurat dan tidak efisien, menyebabkan pemborosan dan produk yang tidak konsisten. Untuk mengatasi hal ini, diperlukan otomatisasi dalam proses penghitungan dan inspeksi kualitas, yang dapat memberikan data real-time dan meningkatkan efisiensi. Otomatisasi ini juga dapat mengurangi kebutuhan tenaga kerja dan biaya produksi, memastikan hanya apel berkualitas tinggi yang diproses lebih lanjut.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>              
+        </div>
+    </section>
+    <!-- End OF About Section -->
+ <!-- Service Section -->
+ <section class="section" id="service">
+    <div class="container">
+        <h6 class="section-title text-center">Our Service</h6>
+        <h6 class="section-subtitle text-center mb-5 pb-3">AQUADATING merupakan model machine learning yang dapat 
+            menghitung jumlah dan inspeksi kualitas apel. Solusi ini akan dirancang untuk menghasilkan 
+            output di atas dengan cara mengenali citra buah apel dari input data user. Solusi ini dibuat untuk 
+            menggantikan proses manual yang selama ini dilakukan. <br>AQUADATING menyediakan dua fitur utama yaitu Quality Detection dan Automatic Counting.
+        </h6>
+            
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-6 mb-md-0">
+                    <div class="card-body">
+                        <small class="text-primary font-weight-bold">01</small>
+                        <h5 class="card-title mt-3"> Quality Detection <h5>
+                        <p class="mb-0">Fitur AQUADATING yang bertujuan untuk memastikan kualitas apel yang diproses. Dengan menggunakan teknologi machine learning, sistem ini menganalisis gambar apel yang diunggah pengguna untuk mendeteksi kualitas setiap apel secara real-time</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-6 mb-md-0">
+                    <div class="card-body">
+                        <small class="text-primary font-weight-bold">02</small>
+                        <h5 class="card-title mt-3">Automatic Counting<h5>
+                        <p class="mb-0">Fitur AQUADATING yang dirancang untuk menghitung jumlah apel secara otomatis dan akurat. Fitur ini menggantikan metode manual yang sering kali tidak akurat dan memakan waktu.sehingga hasil pemeriksaan 
+                            dapat diterima oleh user dalam waktu yang lebih cepat</p>
+                    </div>
+                </div>
+            </div>
+                      
+        </div>
+    </div>
+</section>
+<!-- End OF Service Section -->
+    <!-- Portfolio Section -->
+    <section id="aplikasi" class="section portfolio-section">
+        <h6 class="section-title text-center">Our Project</h6>
+        <h6 class="section-subtitle mb-5 text-center">Object Detection - Apple Detection (Fresh / Stale)</h6>
+        
+        <div class="container">
+            <h5>Object Detection - Apple Detection (Fresh / Stale)</h5>
+            <h9>Task: </h3>
+            <ul>
+                <li>Object Detection With Image Upload(Can Multiple Image) <i class="bi-check-lg text-success"></i></li>
+                <li>Display Object Detection Results <i class="bi-check-lg text-success"></i></li>
+                <li>Download Object Detection Results <i class="bi-check-lg text-success"></i></li>
+                <li>Apple Counting <i class="bi-check-lg text-success"></i></li>
+                <li>Design Web Interface <i class="bi-check-lg text-success"></i></li>
+            </ul>
+            <b>Upload Your Apple Image</b><br><br>
+            <img src={{ url_for('static', filename='imgs/Upload_image.png') }} width="150" ></img><br>
+            <p>silahkan upload gambar apel</p>
+            <form action="/imgpred" method="post" enctype="multipart/form-data">
+                <input type="file" name="images[]" accept="image/*" required multiple>
+                <button type="submit"  class="custom-button">Upload</button>
+            </form> <br><br><br>
+    
+            {% if image_path %}
+            <h2>Object Detection Results</h2>
+            <div class="row">
+                <div class="col-8">
+                    <div class="row">
+                        {% for img_path in img_results %}
+                            <div class="col-md-12">
+                                <div class="img-container">
+                                    <img class="img-fluid" style="max-height: 600px;" src="{{ img_path }}" alt="Object Detection Results">
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Apple Quality Detection with Automatic Counting</h5>
+                            <ul>
+                                
+                                <li>Jumlah Gambar: {{ n_images }}</li>
+                                <li>Jumlah Fresh Apple: {{ fa_apple }}</li>
+                                <li>Jumlah Stale Apple: {{ sa_apple }}</li>
+                                <li>Total Apple: {{ n_apple }}</li>
+                               
+                            
+                        </div>
+                        <div class="col-md-12">
+                            <form action="{{ url_for('predict_download') }}" method="post">
+                                {% for img_path in img_results %}
+                                    <input name="img_results[]" type="hidden" value="{{ img_path }}">
+                                {% endfor %}
+                                
+                                <button type="submit" class="custom-button">Download Hasil Prediksi</button>
+                            </form>
+                        </div>
+                        <!-- <div class="col-md-12">
+                            <div class="img-container">
+                                <img class="img-fluid" src="data:image/png;base64,{{ plot_data }}" alt="plot">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>         
+    </section>
+    <!-- End of portfolio section -->
+
+   
+
+    <!-- logo carousel -->
+	<div class="logo-carousel-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="logo-carousel-inner">
+						<div class="single-logo-item">
+                            <img src={{ url_for('static', filename='imgs/company-logos/1.png') }} alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src={{ url_for('static', filename='imgs/company-logos/2.png') }}  alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src={{ url_for('static', filename='imgs/company-logos/3.png') }}  alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src={{ url_for('static', filename='imgs/company-logos/4.png') }}  alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src={{ url_for('static', filename='imgs/company-logos/5.png') }}  alt="">
+						</div>
+                    </div>
+                    
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end logo carousel -->
+
+ <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h3 class="section-title">Team</h3>
+            <p class="section-description">Our team is composed of talented and dedicated professionals, each bringing their unique expertise to drive our success. Get to know the individuals who make our company thrive</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="member">
+                    <div class="pic"><span class="emoji">👨‍💻</span></div>
+                    <h4> Bagus Dwi Prasetya</h4>
+                    <span>Modeling & Evaluation</span>
+                    <div class="social">
+                        <a href=""><i class="fa fa-whatsapp"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-google-plus"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="member">
+                    <div class="pic"><span class="emoji">👩‍💻</span></div>
+                    <h4> Risma Dwi Zulianti</h4>
+                    <span>Data Aqusition</span>
+                    <div class="social">
+                        <a href=""><i class="fa fa-whatsapp"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-google-plus"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="member">
+                    <div class="pic"><span class="emoji">👩‍💻</span></div>
+                    <h4>Natasya Nur Hadiyanti</h4>
+                    <span>Modeling & Evaluation</span>
+                    <div class="social">
+                        <a href=""><i class="fa fa-whatsapp"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-google-plus"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="member">
+                    <div class="pic"><span class="emoji">👩‍💻</span></div>
+                    <h4>Dellya Dievha</h4>
+                    <span>Data Exploration</span>
+                    <div class="social">
+                        <a href=""><i class="fa fa-whatsapp"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-google-plus"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="member">
+                    <div class="pic"><span class="emoji">👨‍💻</span></div>
+                    <h4>Satria Dioufan Artha Desanta</h4>
+                    <span>Modeling & Evaluation</span>
+                    <div class="social">
+                        <a href=""><i class="fa fa-whatsapp"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-google-plus"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="member">
+                    <div class="pic"><span class="emoji">👨‍💻</span></div>
+                    <h4> Masyura Fanni R.</h4>
+                    <span>Deployment</span>
+                    <div class="social">
+                        <a href=""><i class="fa fa-whatsapp"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-google-plus"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- #team -->
+    <!-- Contact Section -->
+    <section id="contact" class="section has-img-bg pb-0">
+        <div class="container">
+            <!-- footer -->
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box about-widget">
+						<h2 class="widget-title">About us</h2>
+						<p> Temukan solusi untuk mendeteksi kualitas apel dan menghitung jumlahnya secara otomatis. 
+
+                            Bergabunglah dengan kami untuk meningkatkan efisiensi produksi.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box get-in-touch">
+						<h2 class="widget-title">Get in Touch</h2>
+						<ul>
+							<li>Surabaya, Jawa Timur</li>
+							<li>aquadating@gmail.com</li>
+							<li>+62 111 222 3333</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box pages">
+						<h2 class="widget-title">Pages</h2>
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#service">About</a></li>
+							<li><a href="#aplikasi">Aplikasi</a></li>
+							<li><a href="#team">Team</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box subscribe">
+						<h2 class="widget-title">Subscribe</h2>
+						<p>Subscribe to our mailing list to get the latest updates.</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+	
+
+            <!-- Page Footer -->
+            <footer class="mt-5 py-4 border-top border-secondary">
+               	<!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.</p>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	<!-- end copyright -->   
+            </footer>
+
+            <!-- End of Page Footer -->  
+        </div>
+    </section>
+	
+	<!-- core  -->
+
+    <script src={{ url_for('static', filename='vendors/jquery/jquery-3.4.1.js') }} ></script>
+
+   
+    <script src={{ url_for('static', filename='vendors/bootstrap/bootstrap.bundle.js') }} ></script>
+
+    <!-- bootstrap 3 affix -->
+	
+    <script src={{ url_for('static', filename='vendors/bootstrap/bootstrap.affix.js') }} ></script>
+
+    <!-- Isotope -->
+
+    <script src={{ url_for('static', filename='vendors/isotope/isotope.pkgd.js') }} ></script>
+
+    <!-- LeadMark js -->
+  
+    <script src={{ url_for('static', filename='js/leadmark.js') }} ></script>
+
+    
+	
+
+
+</body>
+</html>
